@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untukmu</title>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #000000;
+        color: white;
+        font-family: Arial, sans-serif;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    #mainContent { text-align: center; }
+
+    #text {
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        margin-bottom: 20px;
+    }
+
+    button {
+        padding: 15px 30px;
+        border: none;
+        border-radius: 30px;
+        background: white;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    #flowerContent {
+        display: none;
+        text-align: center;
+        animation: muncul 1s ease;
+    }
+
+    @keyframes muncul {
+        from { opacity: 0; transform: scale(0.8); }
+        to { opacity: 1; transform: scale(1); }
+    }
+
+    img {
+        width: 80%;
+        max-width: 350px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    }
+
+    h2 { margin-top: 20px; color: #ff4d4d; }
+</style>
+</head>
+<body>
+
+    <div id="mainContent">
+        <div id="text">VIRA ❤</div>
+        <p>awkwkwkwk Nih Untukmu Sayangggkuuu ❤</p>
+        <button onclick="tampilkan()">Klik dong</button>
+    </div>
+
+    <div id="flowerContent">
+        <img src="https://i.ibb.co.com/mC60f38/mawar-merah.jpg" alt="Bunga Mawar">
+        <h2>Spesial buat kamu! 🌹</h2>
+    </div>
+
+<script>
+    function tampilkan() {
+        document.getElementById("mainContent").style.display = "none";
+        document.getElementById("flowerContent").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
